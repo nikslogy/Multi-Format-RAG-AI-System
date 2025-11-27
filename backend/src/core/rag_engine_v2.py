@@ -446,7 +446,7 @@ You can ask me things like "What's the total of [column]?", "How many rows have 
 
             for filename in excel_target_files:
                 # Get file path
-                results = self.collection.query(
+                excel_query_results = self.collection.query(
                     query_embeddings=[query_embedding],
                     n_results=1,
                     where={
@@ -457,8 +457,8 @@ You can ask me things like "What's the total of [column]?", "How many rows have 
                     }
                 )
 
-                if results['metadatas'] and results['metadatas'][0]:
-                    metadata = results['metadatas'][0][0]
+                if excel_query_results['metadatas'] and excel_query_results['metadatas'][0]:
+                    metadata = excel_query_results['metadatas'][0][0]
                     file_path = metadata.get('file_path')
 
                     if file_path:
