@@ -1,0 +1,125 @@
+# Common .gitignore for root project
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+/dist
+/build
+/.vc
+/.cache
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+*.sqlite3
+*.db
+
+# Java/Gradle/Maven
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+/.gradle
+/build/
+/target
+/mvnw*
+/.mvn/
+
+# .NET / Visual Studio
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Xcode / iOS
+DerivedData/
+build/
+*.xcworkspace
+*.xcuserstate
+profile
+.xcdebugger/
+
+# Android
+.gradle/
+local.properties
+captures/
+.externalNativeBuild/
+
+# IDEs and editors
+.idea/
+*.swp
+*~.nib
+.vscode/
+*.code-workspace
+
+# Logs and reports
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+coverage/
+*.lcov
+
+# Secrets and environment files
+.env
+.env.*
+*.env
+*.secret
+secrets.properties
+*.pem
+*.key
+credentials.json
+
+# Docker
+docker-compose.override.yml
+Dockerfile.*.local
+**/docker-compose.override.yml
+
+# Compiled/binary files
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+*.pyc
+
+# Package managers / lockfiles you may want to keep tracked (commented intentionally)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Exclude the mobile folder from being tracked by Git (root-level)
+# If mobile was previously tracked, run: git rm -r --cached mobile
+/mobile/
+claude
+.claude
+chroma_db
+excel_files
+uploads
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.next
