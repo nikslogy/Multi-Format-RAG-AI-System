@@ -129,7 +129,7 @@ export default function Home() {
       } else {
         throw new Error(data.detail || 'Failed to get response');
       }
-    } catch (error) {
+    } catch {
       setMessages(prev => [...prev, { role: 'assistant', content: "Sorry, I encountered an error. Please try again." }]);
     } finally {
       setIsLoading(false);
